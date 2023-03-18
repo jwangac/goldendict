@@ -217,7 +217,7 @@ int main( int argc, char ** argv )
     QString xdg_session = xdg_envc ? QString::fromLatin1(xdg_envc) : QString();
     if (!QString::compare(xdg_session, QString("wayland"), Qt::CaseInsensitive))
     {
-        setenv("QT_QPA_PLATFORM", "xcb", 1);
+        // setenv("QT_QPA_PLATFORM", "xcb", 1);
     }
 #endif
   #ifdef Q_OS_MAC
