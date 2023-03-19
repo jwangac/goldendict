@@ -2387,6 +2387,8 @@ void MainWindow::handleEsc()
   if ( view && view->closeSearch() )
     return;
 
+  quitApp();
+
   if( cfg.preferences.escKeyHidesMainWindow )
   {
     toggleMainWindow();
